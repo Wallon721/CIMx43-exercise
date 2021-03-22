@@ -3,26 +3,44 @@
 :root{
     margin: 0;
     padding: 0;
-    --primary-text: white;
-    --secondary-text:black;
+    --primary-text: #5445F0;
+    --secondary-text:white;
     --title-fonts: 'Aladin', cursive;
     --body-fonts: 'Fondamento', cursive; 
     --titile-size: 30px;
     --head-fonts:font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    height: 800px;
+    width: auto;
+    background-image: url("star-bg.jpg")
+}
+
 .title{
     font-family: var(--title-fonts);
-    align-content: center;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+h2{
+    font-size: 20px;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 500px 500px 500px 500px 500px;
     margin: 0 auto;
     align-items: center;
+    width: 1000px;
 }
 
 .grids{
-    grid-column: 300px;
+    display: grid;
+    grid-template-rows: 120px 120px 120px 120px 120px;
+}
+
+.poem p{
+    font-family: var(--body-fonts);
+    text-align: center;
+    color: var(--secondary-text);
 }
