@@ -3,8 +3,8 @@
 :root{
     margin: 0;
     padding: 0;
-    --primary-text: #5445F0;
-    --secondary-text:white;
+    --primary-text: #3546e7;
+    --secondary-text:#FBE9A1;
     --title-fonts: 'Aladin', cursive;
     --body-fonts: 'Fondamento', cursive; 
     --titile-size: 30px;
