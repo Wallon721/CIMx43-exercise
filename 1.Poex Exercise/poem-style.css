@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Fondamento:ital@1&display=swap');
+
+:root{
+    margin: 0;
+    padding: 0;
+    --primary-text: white;
+    --secondary-text:black;
+    --title-fonts: 'Aladin', cursive;
+    --body-fonts: 'Fondamento', cursive; 
+    --titile-size: 30px;
+    --head-fonts:font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+    font-family: var(--title-fonts);
+    align-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 500px 500px 500px 500px 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.grids{
+    grid-column: 300px;
+}
