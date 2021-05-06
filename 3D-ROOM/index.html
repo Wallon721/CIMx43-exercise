@@ -7,10 +7,12 @@
     <title>Wanlong's 3D experiment</title>
 
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-room-component/dist/aframe-room-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 </head>
 <body>
     <h1>Working?</h1>
-    <a-scene>
+    <!-- <a-scene>
         <a-sky src=""></a-sky>
   
         <a-box src="" position="-2 0.5 -4" color="#DE461F"></a-box>
@@ -23,7 +25,28 @@
   
         <a-light type="ambient" color="#3846DF"></a-light>
         <a-light color="#B5B4DE" type="point" intensity="2" position="0 5 0"></a-light>
-      </a-scene>
+      </a-scene> -->
     
+      <a-scene>
+        <a-entity environment="lightPosition: 1 5 -2; groundColor: #445"></a-entity>
+        <a-plane src="" rotation="-90 0 0" height="100" width="100" color="#0940DE"></a-plane>
+		<!-- <rw-room position="-2 0 -2" material="color:#866">
+			<rw-wall position="4 0 0"></rw-wall>
+			<rw-wall position="4 0 4"></rw-wall>
+			<rw-wall position="0 0 4"></rw-wall>
+			<rw-wall position="0 0 0">
+		  		<rw-doorhole id="holeA"></rw-doorhole>
+		  		<rw-doorlink from="#holeA" to="#holeB" position="2.5 0 0"></rw-doorlink>
+			</rw-wall>
+		</rw-room> -->
+		<rw-room position="0 0 -3">
+			<rw-wall position=" 1 0 -1" material="color:#787"></rw-wall>
+			<rw-wall position=" 1 0  1" material="color:#877">
+				<rw-doorhole id="holeB"></rw-doorhole>
+			</rw-wall>
+			<rw-wall position="-1 0  1" material="color:#878"></rw-wall>
+			<rw-wall position="-1 0 -1" material="color:#778"></rw-wall>
+		</rw-room>
+	</a-scene>
 </body>
 </html>
