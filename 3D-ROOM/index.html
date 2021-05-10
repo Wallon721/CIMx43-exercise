@@ -12,24 +12,17 @@
 </head>
 <body>
     <h1>Working?</h1>
-    <!-- <a-scene>
-        <a-sky src=""></a-sky>
-  
-        <a-box src="" position="-2 0.5 -4" color="#DE461F"></a-box>
-        <a-sphere src="" radius="0.5" position="0 0.5 -3" color="#8BDE1F"></a-sphere>
-        <a-cone src="" height="2" radius-top="0.1" position="0 1 -6" color="#D53BE0"></a-cone>
-        <a-box src="" position="2 0.5 -4" color="#7E8BE0"></a-box>
-        <a-plane src="" rotation="-90 0 0" height="100" width="100" color="#0940DE"></a-plane>
-        <a-text value="HELLO I'm building a little room" position="-3 3 -5" color="#000000"></a-text>
-        <a-sphere src="" radius="0.5" position="0 2 -6" color="#8BDE1F" material="emissive: #ff40ff; emissiveIntensity: 0.39; fog: false; height: 20; metalness: 0.32; metalnessTextureOffset: 0.54 -1.51; metalnessTextureRepeat: 1.46 1.6; width: 511.44" geometry="" text__name="I WANT A BALL"></a-sphere>
-  
-        <a-light type="ambient" color="#3846DF"></a-light>
-        <a-light color="#B5B4DE" type="point" intensity="2" position="0 5 0"></a-light>
-      </a-scene> -->
-    
-      <a-scene>
+    <!-- how to use a-frame watcher? http://supermedium.com/aframe-watcher/ -->
+
+    <a-scene>
+
+        <a-assets>
+            <a-asset-item id="test-obj" src="asset/Twister.obj"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #test-obj" position = "3 0 1" scale = " 0.01 0.01 0.01" ></a-entity>
         <a-entity environment="lightPosition: 1 5 -2; groundColor: #445"></a-entity>
-        <a-plane src="" rotation="-90 0 0" height="100" width="100" color="#0940DE"></a-plane>
+        <!-- <a-plane src="" rotation="-90 0 0" height="100" width="100" color="#0940DE"></a-plane> -->
 		<rw-room position="-2 0 -2" material="color:#866">
 			<rw-wall position="4 0 0"></rw-wall>
 			<rw-wall position="4 0 4"></rw-wall>
@@ -39,14 +32,14 @@
 		  		<rw-doorlink from="#holeA" to="#holeB" position="2.5 0 0"></rw-doorlink>
 			</rw-wall>
 		</rw-room>
-		<!-- <rw-room position="0 0 -3">
+		<rw-room position="0 0 -3">
 			<rw-wall position=" 1 0 -1" material="color:#787"></rw-wall>
 			<rw-wall position=" 1 0  1" material="color:#877">
 				<rw-doorhole id="holeB"></rw-doorhole>
 			</rw-wall>
 			<rw-wall position="-1 0  1" material="color:#878"></rw-wall>
 			<rw-wall position="-1 0 -1" material="color:#778"></rw-wall>
-		</rw-room> -->
+		</rw-room>
 	</a-scene>
 </body>
 </html>
