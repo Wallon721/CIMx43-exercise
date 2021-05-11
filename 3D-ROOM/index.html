@@ -15,12 +15,12 @@
     <!-- how to use a-frame watcher? http://supermedium.com/aframe-watcher/ -->
 
     <a-scene>
-
+        <!-- assets -->
         <a-assets>
             <a-asset-item id="test-obj" src="asset/Twister.obj"></a-asset-item>
         </a-assets>
 
-        <a-entity obj-model="obj: #test-obj" position = "0.5 0.5 -2" scale = " 0.01 0.01 0.01" ></a-entity>
+        <!-- room set up -->
         <a-entity environment="lightPosition: 1 5 -2; groundColor: #445"></a-entity>
         <!-- <a-plane src="" rotation="-90 0 0" height="100" width="100" color="#0940DE"></a-plane> -->
 		<rw-room position="-2 0 -2" material="color:#866">
@@ -40,6 +40,9 @@
 			<rw-wall position="-1 0  1" material="color:#878"></rw-wall>
 			<rw-wall position="-1 0 -1" material="color:#778"></rw-wall>
 		</rw-room>
+
+        <!-- objects -->
+        <a-entity obj-model="obj: #test-obj" position = "0.5 0.5 -2" scale = " 0.01 0.01 0.01" ></a-entity>
 	</a-scene>
 </body>
 </html>
