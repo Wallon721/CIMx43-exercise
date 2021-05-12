@@ -18,6 +18,7 @@
         <!-- assets -->
         <a-assets>
             <img id="boxTexture" src="asset/cube.jpg">
+            <img id="ball" src="asset/ball.jpg">
             <img id="groundTexture" src="asset/floor-tex.jpg">
 
             <a-asset-item id="gunda-obj" src="asset/Gunda.obj"></a-asset-item>
@@ -56,6 +57,8 @@
         <!-- objects -->
         <a-box src="#boxTexture" position="2 5 -0.5" rotation="0 45 45" scale="2 2 2"
          animation="property: object3D.position.y; to: 5.6; dir: alternate; dur: 2000; loop: true"></a-box>
+         <a-sphere src="#ball" position="6 8 2" rotation="0 0 0" scale="1 1 1"
+         animation="property: object3D.position.y; to: 5.6; dir: alternate; dur: 2000; loop: true"></a-sphere>
         <a-entity obj-model="obj: #Geisha-obj; mtl: #Geisha-mtl" position = "3 11 3.5" scale = "0.05 0.05 0.05" rotation ="90 0 0"
         animation="property: object3D.rotation.z; to: 720; dir: alternate; dur: 20000; loop: true"></a-entity>
         <a-entity obj-model="obj: #gunda-obj; mtl: #gunda-mtl" position = "0 10 -30" scale = "6 6 6" rotation ="0 180 0" ></a-entity>
